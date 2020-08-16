@@ -1,10 +1,10 @@
 import setuptools
  
 setuptools.setup(
-    name="libhollow",
+    name="iiif_static",
     version="1.0",
-    author="momokan",
-    author_email="momokan@example.com",
+    author="Satoru Nakamura",
+    author_email="na.kamura.1263@gmail.com",
     description="libhollow is my own python package",
     long_description="The halloween party has gone over...",
     long_description_content_type="text/markdown",
