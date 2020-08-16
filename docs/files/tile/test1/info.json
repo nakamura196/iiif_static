@@ -1,0 +1,63 @@
+{
+  "@context": "http://iiif.io/api/image/2/context.json",
+  "@id": "https://nakamura196.github.io/iiif_static/files/tile/test1",
+  "height": 720,
+  "profile": [
+    "http://iiif.io/api/image/2/level0.json",
+    {
+      "formats": [
+        "jpg"
+      ],
+      "qualities": [
+        "default"
+      ]
+    }
+  ],
+  "protocol": "http://iiif.io/api/image",
+  "sizes": [
+    {
+      "height": 90,
+      "width": 160
+    },
+    {
+      "height": 45,
+      "width": 80
+    },
+    {
+      "height": 23,
+      "width": 40
+    },
+    {
+      "height": 11,
+      "width": 20
+    },
+    {
+      "height": 6,
+      "width": 10
+    },
+    {
+      "height": 3,
+      "width": 5
+    },
+    {
+      "height": 1,
+      "width": 3
+    },
+    {
+      "height": 1,
+      "width": 1
+    }
+  ],
+  "tiles": [
+    {
+      "height": 200,
+      "scaleFactors": [
+        1,
+        2,
+        4
+      ],
+      "width": 200
+    }
+  ],
+  "width": 1280
+}

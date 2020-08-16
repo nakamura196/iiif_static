@@ -1,0 +1,1 @@
+pip install -U git+https://github.com/nakamura196/iiif_static.git -t lib
