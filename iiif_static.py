@@ -13,6 +13,10 @@ from iiif import __version__
 from iiif.error import IIIFError
 from iiif.static import IIIFStatic, IIIFStaticError
 
+from PIL import Image
+
+Image.MAX_IMAGE_PIXELS = 1000000000
+
 import pandas as pd
 
 def main():
