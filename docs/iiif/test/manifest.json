@@ -1,6 +1,6 @@
 {
     "@context": "http://iiif.io/api/presentation/2/context.json",
-    "@id": "https://nakamura196.github.io/iiif0/iiif/test/manifest.json",
+    "@id": "https://nakamura196.github.io/iiif_static/iiif/test/manifest.json",
     "@type": "sc:Manifest",
     "description": "",
     "label": "テスト",
@@ -9,18 +9,18 @@
     "metadata": [],
     "sequences": [
         {
-            "@id": "https://nakamura196.github.io/iiif0/iiif/test/sequence/normal",
+            "@id": "https://nakamura196.github.io/iiif_static/iiif/test/sequence/normal",
             "@type": "sc:Sequence",
             "canvases": [
                 {
-                    "@id": "https://nakamura196.github.io/iiif0/iiif/test/canvas/p1",
+                    "@id": "https://nakamura196.github.io/iiif_static/iiif/test/canvas/p1",
                     "@type": "sc:Canvas",
                     "height": 720,
                     "images": [
                         {
                             "@type": "oa:Annotation",
                             "motivation": "sc:painting",
-                            "on": "https://nakamura196.github.io/iiif0/iiif/test/canvas/p1",
+                            "on": "https://nakamura196.github.io/iiif_static/iiif/test/canvas/p1",
                             "resource": {
                                 "@id": "https://nakamura196.github.io/iiif_static/files/tile/sub_dir/test2/full/full/0/default.jpg",
                                 "@type": "dctypes:Image",
@@ -46,14 +46,14 @@
                     "width": 1280
                 },
                 {
-                    "@id": "https://nakamura196.github.io/iiif0/iiif/test/canvas/p2",
+                    "@id": "https://nakamura196.github.io/iiif_static/iiif/test/canvas/p2",
                     "@type": "sc:Canvas",
                     "height": 720,
                     "images": [
                         {
                             "@type": "oa:Annotation",
                             "motivation": "sc:painting",
-                            "on": "https://nakamura196.github.io/iiif0/iiif/test/canvas/p2",
+                            "on": "https://nakamura196.github.io/iiif_static/iiif/test/canvas/p2",
                             "resource": {
                                 "@id": "https://nakamura196.github.io/iiif_static/files/tile/test1/full/full/0/default.jpg",
                                 "@type": "dctypes:Image",

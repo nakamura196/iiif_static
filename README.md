@@ -8,7 +8,13 @@ https://colab.research.google.com/github/nakamura196/ndl_ocr/blob/main/IIIF_Imag
 
 ## 表示例
 
+### Image API
+
 https://www.kanzaki.com/works/2016/pub/image-annotator?u=https://nakamura196.github.io/iiif_static/files/tile/test1/info.json
+
+### Presentation API
+
+https://www.kanzaki.com/works/2016/pub/image-annotator?u=https://nakamura196.github.io/iiif_static/iiif/test/manifest.json
 
 ## インストール
 

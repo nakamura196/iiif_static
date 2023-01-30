@@ -5,10 +5,8 @@ import os
 ID = "test"
 LABEL = "テスト"
 VHINT = "right-to-left"
-
 DOCS_DIR = "docs"
-
-GITHUB_URL = "https://nakamura196.github.io/iiif0"
+GITHUB_URL = "https://nakamura196.github.io/iiif_static"
 
 files = glob.glob(f"{DOCS_DIR}/files/tile/**/info.json", recursive=True)
 
