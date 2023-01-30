@@ -26,6 +26,8 @@ def main():
                               usage='usage: %prog [options] file [[file2..]] (-h for help)',
                               version='%prog ' + __version__)
 
+    p.add_option('--input_file_path')
+
     p.add_option('--dst', '-d', action='store', default='/tmp',
                  help="Destination directory for images [default '%default']")
     p.add_option('--tilesize', '-t', action='store', type='int', default=512,
@@ -102,23 +104,25 @@ def main():
     else:
         try:
             
-            opt.dst = "docs/files/tile"
-            opt.tilesize = 200
-            opt.prefix = "https://utda.github.io/shelly/iiif/files/tile"
-            sources = ["image/test.jpg"]
+            # opt.dst = "docs/files/tile"
+            # opt.tilesize = 200
+            # opt.prefix = "https://utda.github.io/shelly/iiif/files/tile"
+            # sources = ["image/test.jpg"]
 
-            df = pd.read_excel('input.xlsx', header=None, index_col=None)
+            print(opt.input_file_path)
+
+            df = pd.read_excel(opt.input_file_path, header=None, index_col=None)
 
             for i in range(1, len(df.index)):
 
-                opt.dst = df.iloc[i, 1]
-                opt.tilesize = df.iloc[i, 2]
-                opt.prefix = df.iloc[i, 3]
+                dst = df.iloc[i, 1] if not pd.isnull(df.iloc[i, 1]) else opt.dst
+                tilesize = int(df.iloc[i, 2]) if not pd.isnull(df.iloc[i, 2]) else opt.tilesize
+                prefix = df.iloc[i, 3] if not pd.isnull(df.iloc[i, 3]) else opt.prefix
                 sources = [df.iloc[i, 0]]
 
-                sg = IIIFStatic(dst=opt.dst, tilesize=opt.tilesize,
+                sg = IIIFStatic(dst=dst, tilesize=tilesize,
                                 api_version=opt.api_version, dryrun=opt.dryrun,
-                                prefix=opt.prefix, osd_version=opt.osd_version,
+                                prefix=prefix, osd_version=opt.osd_version,
                                 generator=opt.generator,
                                 max_image_pixels=opt.max_image_pixels,
                                 extras=opt.extra)
